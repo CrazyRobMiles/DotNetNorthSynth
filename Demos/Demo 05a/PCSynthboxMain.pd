@@ -1,0 +1,27 @@
+#N canvas 2041 395 1278 831 12;
+#X obj 369 145 loadbang;
+#X obj 369 198 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 33 144 vsl 15 128 0 127 0 0 attack attack Attack -10 -9 0 10
+-4160 -1 -1 16000 1;
+#X obj 72 144 vsl 15 128 0 127 0 0 decay decay Decay -10 -9 0 10 -4160
+-1 -1 15600 1;
+#X obj 143 144 vsl 15 128 0 127 0 0 phase phase Phase -10 -9 0 10 -4160
+-1 -1 15400 1;
+#X obj 110 144 vsl 15 128 0 127 0 0 sine sine Sine -10 -9 0 10 -4160
+-1 -1 25400 1;
+#X obj 198 143 vsl 15 128 0 127 0 0 fxm1 fxm1 Keys 5 -9 0 10 -4034
+-1 -1 0 1;
+#X obj 231 143 vsl 15 128 0 127 0 0 fxm2 fxm2 Drums 5 -9 0 10 -4034
+-1 -1 25400 1;
+#X obj 285 143 vsl 15 128 0 127 0 0 reverbLevel reverbLevel Level -8
+-9 0 10 -258112 -1 -1 24800 1;
+#X obj 315 143 vsl 15 128 0 127 0 0 reverbLiveliness reverbLiveliness
+Live -5 -9 0 10 -258112 -1 -1 21400 1;
+#X text 74 86 SYNTH;
+#X text 29 320 Rob Miles;
+#X text 228 83 REVERB;
+#X text 131 32 PC SYNTHBOX Version 1.2;
+#X obj 369 249 PCStartup;
+#X connect 0 0 1 0;
+#X connect 1 0 14 0;
