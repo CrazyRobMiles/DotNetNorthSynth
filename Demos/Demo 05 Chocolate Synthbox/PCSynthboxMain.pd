@@ -1,0 +1,27 @@
+#N canvas 88 69 498 369 12;
+#X obj 369 145 loadbang;
+#X obj 369 198 bng 15 250 50 0 empty empty empty 17 7 0 10 #fcfcfc
+#000000 #000000;
+#X obj 33 144 vsl 15 128 0 127 0 0 attack attack Attack -10 -9 0 10
+#0400fc #000000 #000000 0 1;
+#X obj 72 144 vsl 15 128 0 127 0 0 decay decay Decay -10 -9 0 10 #0400fc
+#000000 #000000 0 1;
+#X obj 143 144 vsl 15 128 0 127 0 0 phase phase Phase -10 -9 0 10 #0400fc
+#000000 #000000 0 1;
+#X obj 110 144 vsl 15 128 0 127 0 0 sine sine Sine -10 -9 0 10 #0400fc
+#000000 #000000 0 1;
+#X obj 198 143 vsl 15 128 0 127 0 0 fxm1 fxm1 Keys 5 -9 0 10 #00fc04
+#000000 #000000 0 1;
+#X obj 231 143 vsl 15 128 0 127 0 0 fxm2 fxm2 Drums 5 -9 0 10 #00fc04
+#000000 #000000 0 1;
+#X obj 285 143 vsl 15 128 0 127 0 0 reverbLevel reverbLevel Level -8
+-9 0 10 #fc00fc #000000 #000000 0 1;
+#X obj 315 143 vsl 15 128 0 127 0 0 reverbLiveliness reverbLiveliness
+Live -5 -9 0 10 #fc00fc #000000 #000000 0 1;
+#X text 74 86 SYNTH;
+#X text 29 320 Rob Miles;
+#X text 228 83 REVERB;
+#X obj 369 249 PCStartup;
+#X text 76 32 PC Chocolate SynthBox Version 1;
+#X connect 0 0 1 0;
+#X connect 1 0 13 0;
