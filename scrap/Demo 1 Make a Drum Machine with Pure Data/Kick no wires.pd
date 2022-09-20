@@ -1,8 +1,0 @@
-#N canvas 1976 423 895 742 12;
-#X obj 79 77 bng 15 250 50 0 empty empty Kick 17 7 0 10 -262144 -1
--1;
-#X msg 79 119 0 \, 1 200;
-#X obj 80 160 line~;
-#X obj 84 228 cos~;
-#X obj 85 263 dac~;
-#X obj 82 195 *~ 20;
